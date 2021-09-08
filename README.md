@@ -4,9 +4,11 @@ They are then displayed on the map using the Google Maps API. A review feature i
 and are saved on a MySQL server.
 
 TECH STACK
-FRONT-END:
+
+FRONT-END:  
 VanillaJS, CSS, HTML5
-BACK-END:
+
+BACK-END:  
 NodeJS, ExpressJS, MySQL
 
 ![ge1](https://user-images.githubusercontent.com/66304521/132509668-10da3d2b-1bac-4961-a558-11ba69930947.PNG)
