@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-
+//momentary credentials to access the database (development only)
 var con = mysql.createConnection({
   host: "localhost",
   user: "exampleuser",
