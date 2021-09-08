@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+		<link rel="stylesheet" href="/stylesheets/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"> </script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0ObQIpxIqRpMZ5VpgPJ2LTKTCzECDr9w&callback=initMap"> </script>
+		<meta charset="utf-8"/>
+		<title>GeoRating Milan</title>
+</head>
+<body>
+		<div class="topnav">
+	 			<button onclick="CreateGetRequest(negoziStoriciGetReq, drawMap, initMap);setColor(0)" class="buttonPressed" id="0">Historic Shops</button>
+	 			<button onclick="CreateGetRequest(wifiAPGetReq, drawMap, initMap);setColor(1)" class="buttonNotPressed" id="1">WiFi Access Points</button>
+	 			<button onclick="CreateGetRequest(puntiParcoAgricoloSudMilanoGetReq, drawMap, initMap);setColor(2)" class="buttonNotPressed" id="2">Itineraries in Parco Agricolo Sud Milano</button>
+	 			<button onclick="CreateGetRequest(museiMilanoGetReq, drawMap, initMap);setColor(3)" class="buttonNotPressed" id="3">Museums</button>
+	  		<button onclick="CreateGetRequest(struttureRicettiveMilanoGetReq, drawMap, initMap);setColor(4)" class="buttonNotPressed" id="4">Lodging</button>
+		</div>
+  	<div id="map">
+  	</div>
+  	<div id="myModal" class="modal">
+    <div class="modal-content">
+				<span class="close">&times;</span>
+   			<div id="summary"></div>
+        <form id="commentForm" >
+	        	<p>Send a comment:</p>
+      			<input type="text" placeholder="Enter user" id="getUser" name="user" >
+						<span id=starFormWrap class="valid">
+	        			<span id=starForm class=star>
+										Rating:
+          					<i class="fa fa-star unchecked" id="one"></i>
+          					<i class="fa fa-star unchecked" id="two"></i>
+          					<i class="fa fa-star unchecked" id="three"></i>
+          					<i class="fa fa-star unchecked" id="four"></i>
+          					<i class="fa fa-star unchecked" id="five"></i>
+        				</span>
+						</span>
+          	<span>
+                <input type="hidden" id="getRating" name="rating">
+                <input type="button" onclick="submitForm()" value="Submit" class="button">
+                <br><textarea placeholder="Enter a comment" id="getComment" name="comment" rows="5" cols="33" class="valid"></textarea>
+                <input type="hidden" id="getAPName" name="apname">
+            </span>
+       		</form>
+       		<p>Comments:</p>
+      		<div id="entry"></div>
+    	</div>
+  </div>
+  <script src="/javascripts/script.js"></script>
+</body>
+</html>

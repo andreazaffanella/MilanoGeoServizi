@@ -1,0 +1,180 @@
+/* ---------------------------------Modal Content-----------------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  color: #f2f2f2;
+  background-color: #333;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #888;
+  overflow-y: auto; /* Enable scroll if needed */
+  overflow-x: hidden;
+  width: 60%;
+  height: 70%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------------------------*/
+.checked{
+  color:#4CAF50;
+}
+.unchecked{
+  color:grey;
+}
+
+#map{
+  width: 100%;
+  height: 95%;
+}
+
+#getComment{
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+  background-color: #2b2b2b;
+  color: #f2f2f2;
+}
+#getUser{
+  width: 25%;
+  padding: 10px;
+  background-color: #2b2b2b;
+  color: #f2f2f2;
+}
+
+#summary{
+  display: inline;
+  padding-right:10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#modalTitle{
+  display:inline;
+  padding-right: 10px;
+  color: #f2f2f2;
+}
+
+/* ------------------------------------NAVBAR-------------------------------- */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav button {
+  float: left;
+}
+
+.topnav button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor:pointer
+}
+/*----------------------------------------------------------------------------*/
+
+body{
+ overflow: hidden;
+ height:inherit;
+ width: inherit;
+ margin:0px;
+}
+
+.star{
+display: inline;
+  padding: 4px;
+  font-size: 20px;
+  background-color:#2b2b2b;
+}
+.commentBox{
+  padding:1px;
+  border-top-color: grey;
+  border-top-style: dashed;
+  border-top-width: 1px;
+  margin: unset;
+}
+.author{
+  display: inline;
+  padding-right:10px;
+  font-weight: bold;
+  font-size:1.200em;
+}
+.date{
+  font-style: italic;
+  margin: unset;
+font-size:0.800em;
+}
+
+.valid{
+  border-style: none;
+}
+
+.invalid{
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+}
+.bodyText{
+      padding:3px;
+      word-wrap: break-word;      /* IE 5.5-7 */
+      white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+      white-space: pre-wrap;      /* current browsers */
+}
+.button{
+    float: right;
+    background-color: #4CAF50;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-style:none;
+    cursor:pointer
+}
+.buttonPressed{
+  background-color: #4CAF50;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style:none;
+  cursor:pointer
+}
+.buttonNotPressed{
+  background-color: #333;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style:none;
+  cursor:pointer
+}
+html{
+  height:100%;
+  width: 100%;
+}
